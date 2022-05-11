@@ -3,7 +3,13 @@ import 'dart:io';
 
 class Library with searchIndex, mainMenuProcesses {
   var allBooks, lentBooks, bookList = [], userList = [];
-  List genres = ["Engineering", "Biography", "History", "Fiction", "Mystery"];
+  List genres = [
+    "Computer Science",
+    "Philosophy",
+    "Pure Science",
+    "Art and Recreation",
+    "History"
+  ];
 
   Library() {
     allBooks = 0;
@@ -164,7 +170,7 @@ mixin mainMenuProcesses {
       //view books based on a certain genre
       else if (viewBooks == '2') {
         stdout.write(
-            "\nGenres available:\n(1)Engineering\n(2)Biography\n(3)History\n(4)Fiction\n(5)Mystery\nType option: ");
+            "\nGenres available:\n(1)Computer Science\n(2)Philosophy\n(3)Pure Science\n(4)Art and Recreation\n(5)History\nType option: ");
         int? viewGenres = int.tryParse(stdin.readLineSync()!);
 
         if (viewGenres != null && (viewGenres > 0 || viewGenres < 6)) {
@@ -343,46 +349,34 @@ void systemTest(var testLib) {
 
 //method to add mock information to the library
 void testAdd(var testLib) {
-  testLib.addBook("Basic Mechanical Engineering", "D.K. CHAVAN", "Engineering",
-      "978-81-89401-31-3");
-  testLib.addBook("Engineering: A Beginner's Guide", "Natasha McCarthy",
-      "Engineering", "978-18-51686-62-9");
   testLib.addBook(
-      "Advanced Engineering Mathematics, SI Edition 008 Edition, Kindle Edition",
-      "Peter V. O'Neil",
-      "Engineering",
-      "978-13-37274-52-4");
-  testLib.addBook("Materials and Surface Engineering: Research and Development",
-      "J. Paulo Davim", "Engineering", "978-08-57091-51-2");
-  testLib.addBook("Mechanics of Materials 10th Edition", "R. C. Hibbeler",
-      "Engineering", "978-01-34319-65-0");
-  testLib.addBook("Steve Jobs: The Exclusive Biography", "Walter Isaacson",
-      "Biography", "978-14-51648-53-9");
+      "Hello Dolly", "Amore May", "Philosophy", "978-1-60309-047-6");
+  testLib.addBook("At The End of The Universe", "Felix Yongbok", "Pure Science",
+      "978-1-891830-85-3");
   testLib.addBook(
-      "Alexander Hamilton", "Ron Chernow", "Biography", " 978-01-43034-75-9");
+      "Are You Alone?", "Annabelle Conjure", "Philosophy", "978-1-60309-016-2");
+  testLib.addBook("The Art of Symmetry", "SQ Kim", "Art and Recreation",
+      "978-1-60309-265-4");
+  testLib.addBook("Introduction to C", "Kevin Steinfield", "Computer Science",
+      "978-1-65309-067-1");
+  testLib.addBook("The Beginning of Mankind", "Linda Struss", "History",
+      "978-1-876830-35-3");
+  testLib.addBook("Is The Truth True?", "Sicily Walker", "Philosophy",
+      "978-1-51260309-316-2");
   testLib.addBook(
-      "Becoming", "Michelle Obama", "Biography", "978-15-24763-13-8");
-  testLib.addBook("Man's Search for Meaning", "Viktor E. Frankl", "Biography",
-      "978-08-07014-29-5");
-  testLib.addBook("The Guns of August: The Outbreak of World War I",
-      "Barbara Wertheim Tuchman", "History", "N/A");
+      "Rainbows and Rain", "Milli Smith", "Pure Science", "978-1-40315-645-3");
+  testLib.addBook("Curvy Nature", "Pablo Vivaldi", "Art and Recreation",
+      "978-1-51339-967-5");
+  testLib.addBook("Dart for Dummies", "Hyunjin Fryer", "Computer Science",
+      "978-1-12830-05-3");
+  testLib.addBook("The French War", "Von Bach", "History", "979-3-41309-096-2");
   testLib.addBook(
-      "The Rise and Fall of the Third Reich: A History of Nazi Germany",
-      "William L. Shirer",
-      "History",
-      "978-06-71728-68-7");
-  testLib.addBook(
-      "The History of the Ancient World: From the Earliest Accounts to the Fall of Rome",
-      "Susan Wise Bauer",
-      "History",
-      "978-03-93059-74-8");
-  testLib.addBook("One Hundred Years of Solitude", " Gabriel Garcia Marquez",
-      "Fiction", "006-08-8328-6");
-  testLib.addBook(
-      "Brave New World", "Aldous Huxley", "Fiction", "978-00-60850-52-4");
-  testLib.addBook("Gone Girl", "Gillian Flynn", "Mystery", "978-03-07588-37-1");
-  testLib.addBook("22 Seconds (Women's Murder Club, 22)", "James Patterson",
-      "Mystery", "978-03-16499-37-8");
+      "Road to Happiness", "Happy Baltazar", "Philosophy", "978-1-88809-203-4");
+  testLib.addBook("Tardigrades: The Immortals of the Microcosmos", "Paulo Nase",
+      "Pure Science", "978-7-61209-817-6");
+  testLib.addBook("When To Stop Chasing Your Dreams", "Albert Schmidt",
+      "Philosophy", "978-1-543130-14-3");
+  testLib.addBook("Smile", "Annalisa Mayer", "Philosophy", "978-1-91409-516-6");
 }
 
 //main function starts here
