@@ -1,4 +1,3 @@
-//Lemuel Jay B. Enad BSCPE 3A
 import 'dart:io';
 
 class Library with searchIndex, mainMenuProcesses {
