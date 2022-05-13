@@ -349,14 +349,19 @@ void systemTest(var testLib) {
 
 //method to add mock information to the library
 void testAdd(var testLib) {
+  testLib.addBook("The Republic", "Plato", "Philosophy", "978-1-503379-98-5");
   testLib.addBook(
-      "Hello Dolly", "Amore May", "Philosophy", "978-1-60309-047-6");
-  testLib.addBook("At The End of The Universe", "Felix Yongbok", "Pure Science",
-      "978-1-891830-85-3");
+      "Chasing New Horizons: Inside the Epic First Mission to Pluto",
+      "David Grinspoon and Alan Stern",
+      "Pure Science",
+      "978-1-250098-96-2");
+  testLib.addBook("Beyond Good and Evil", "Friedrich Nietzsche", "Philosophy",
+      "978-1-503250-88-8");
   testLib.addBook(
-      "Are You Alone?", "Annabelle Conjure", "Philosophy", "978-1-60309-016-2");
-  testLib.addBook("The Art of Symmetry", "SQ Kim", "Art and Recreation",
-      "978-1-60309-265-4");
+      "Art and Fear: Observations on the Perils (and Rewards) of Artmaking",
+      "David Bayles and Ted Orland",
+      "Art and Recreation",
+      "978-0-961454-73-9");
   testLib.addBook("Introduction to C", "Kevin Steinfield", "Computer Science",
       "978-1-65309-067-1");
   testLib.addBook("The Beginning of Mankind", "Linda Struss", "History",
@@ -364,19 +369,23 @@ void testAdd(var testLib) {
   testLib.addBook("Is The Truth True?", "Sicily Walker", "Philosophy",
       "978-1-51260309-316-2");
   testLib.addBook(
-      "Rainbows and Rain", "Milli Smith", "Pure Science", "978-1-40315-645-3");
+      "The Poison Squad: One Chemist's Single-Minded Crusade for Food Safety at the Turn of the Twentieth Century",
+      "Deborah Blum",
+      "Pure Science",
+      "978-1-594205-14-9");
   testLib.addBook("Curvy Nature", "Pablo Vivaldi", "Art and Recreation",
       "978-1-51339-967-5");
   testLib.addBook("Dart for Dummies", "Hyunjin Fryer", "Computer Science",
       "978-1-12830-05-3");
   testLib.addBook("The French War", "Von Bach", "History", "979-3-41309-096-2");
-  testLib.addBook(
-      "Road to Happiness", "Happy Baltazar", "Philosophy", "978-1-88809-203-4");
-  testLib.addBook("Tardigrades: The Immortals of the Microcosmos", "Paulo Nase",
-      "Pure Science", "978-7-61209-817-6");
+  testLib.addBook("Il Principe: The Prince", "Niccolò Machiavelli",
+      "Philosophy", "978-1-937847-03-6");
+  testLib.addBook("Wilding: The Return of Nature to a British Farm",
+      "Isabella Tree", "Pure Science", "978-1-509805-09-9");
   testLib.addBook("When To Stop Chasing Your Dreams", "Albert Schmidt",
       "Philosophy", "978-1-543130-14-3");
-  testLib.addBook("Smile", "Annalisa Mayer", "Philosophy", "978-1-91409-516-6");
+  testLib.addBook(
+      "The Art Of War", "Sun Tzu", "Philosophy", "978-1-599869-77-3");
 }
 
 //main function starts here
